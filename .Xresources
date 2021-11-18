@@ -1,0 +1,37 @@
+! Dracula Xresources palette
+*.foreground: #F8F8F2
+*.background: #282A36
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
+
+!Rofi
+
+rofi.color-window: argb:7f2d303b, #7c8389, #1d1f21
+rofi.color-normal: argb:31d1f21b, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
+rofi.color-urgent: argb:2c1d1f21, #cc6666, argb:e54b5160, #a54242, #f9f9f9
+rofi.color-active: argb:2c1d1f21, #65acff, argb:e44b5160, #4491ed, #f9f9f9
+rofi.width: 20
+rofi.lines: 5
+rofi.columns: 2
+rofi.font: terminus 8
+rofi.bw: 0
+rofi.padding: 40
+rofi.eh: 1
+!rofi.separator-style: solid
+rofi.hide-scrollbar: true
+
+Xcursor.theme: Fluent-dark-cursors

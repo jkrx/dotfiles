@@ -1,0 +1,234 @@
+#Hobs Config#
+
+font pango:SourceCodePro-Regular 8
+
+#Colours#
+
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
+
+#i3bar#
+
+bar {
+  font pango:SourceCodePro-Regular 8
+  status_command i3status
+  position top
+  colors {
+  background #282A36
+  statusline #F8F8F2
+  separator  #44475A
+
+  focused_workspace  #44475A #44475A #F8F8F2
+  active_workspace   #282A36 #44475A #F8F8F2
+  inactive_workspace #282A36 #282A36 #BFBFBF
+  urgent_workspace   #FF5555 #FF5555 #F8F8F2
+  binding_mode       #FF5555 #FF5555 #F8F8F2
+  }
+}
+
+#Rofi#
+
+bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Shift+d exec --no-startup-id rofi -show run
+
+#Startup#
+
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec --no-startup-id sh ~/.fehbg
+exec --no-startup-id kitty
+exec --no-startup-id qbittorrent
+
+
+#Mod keys#
+
+set $mod Mod4
+floating_modifier $mod
+
+#Keybindings apps#
+
+bindsym $mod+Return exec kitty
+bindsym $mod+f exec --no-startup-id firefox
+bindsym $mod+d exec --no-startup-id discord-canary
+bindsym $mod+s exec --no-startup-id steam
+bindsym $mod+a exec --no-startup-id atom
+bindsym $mod+g exec --no-startup-id torbrowser-launcher
+bindsym $mod+o exec --no-startup-id obs
+bindsym $mod+t exec --no-startup-id chatterino
+bindsym $mod+Shift+t exec --no-startup-id qbittorrent
+bindsym $mod+Shift+s exec --no-startup-id spotify
+
+#Kill#
+bindsym $mod+q kill
+
+
+#Window tabbing#
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+#Move windows#
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+#Window split#
+
+bindsym $mod+c split h
+bindsym $mod+v split v
+
+
+#Fullscreen#
+
+bindsym $mod+x fullscreen
+
+#Window layout#
+
+#bindsym $mod+t layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+#Toogle floating#
+
+bindsym $mod+Shift+space floating toggle
+
+#Focus mode toggle#
+
+bindsym $mod+space focus mode_toggle
+
+#Amixer
+
+bindsym XF86AudioMute exec amixer sset 'Master' toggle
+bindsym XF86AudioLowerVolume exec amixer sset 'Master' 5%-
+bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+
+
+#WS names#
+
+set $WS1 
+set $WS2 
+set $WS3 
+set $WS4 
+set $WS5 
+set $WS6 
+set $WS7 
+set $WS8 
+set $WS9 
+set $WS0 
+
+#Switch WS#
+
+bindsym $mod+1 workspace $WS1
+bindsym $mod+2 workspace $WS2
+bindsym $mod+3 workspace $WS3
+bindsym $mod+4 workspace $WS4
+bindsym $mod+5 workspace $WS5
+bindsym $mod+6 workspace $WS6
+bindsym $mod+7 workspace $WS7
+bindsym $mod+8 workspace $WS8
+bindsym $mod+9 workspace $WS9
+bindsym $mod+0 workspace $WS0
+
+#Move window to WS#
+
+bindsym $mod+Shift+1 move container to workspace $WS1
+bindsym $mod+Shift+2 move container to workspace $WS2
+bindsym $mod+Shift+3 move container to workspace $WS3
+bindsym $mod+Shift+4 move container to workspace $WS4
+bindsym $mod+Shift+5 move container to workspace $WS5
+bindsym $mod+Shift+6 move container to workspace $WS6
+bindsym $mod+Shift+7 move container to workspace $WS7
+bindsym $mod+Shift+8 move container to workspace $WS8
+bindsym $mod+Shift+9 move container to workspace $WS9
+bindsym $mod+shift+0 move container to workspace $WS0
+
+#Apps assigned WS#
+
+assign [class="firefox"] 
+assign [class="torbrowser-launcher"] 
+assign [class="Audacity"] $WS5
+assign [class="Audacious"] $WS5
+assign [class="Nitrogen"] $WS5
+assign [class="Lmms"] $WS5
+assign [class="steam"] $WS4
+assign [class="gimp"] $WS9
+assign [class="VirtualBox"] $WS9
+assign [class="discord-canary"] $WS6
+assign [class="qbittorrent"] $WS8
+assign [class="obs"] $WS9
+assign [class="chatterino"] $WS9
+assign [class="vlc"] $WS0
+
+#WS assigned monitor#
+
+workspace "1: " output DVI-D-0
+workspace "2: " output HDMI-A-0
+workspace "3: " output HDMI-A-0
+workspace "4: " output HDMI-A-0
+workspace "5: " output DVI-D-0
+workspace "6: " output HDMI-A-0
+workspace "7: " output DVI-D-0
+#workspace 8:dl output DVI-D-0
+#workspace 9:media output HDMI-A-0
+#workspace 0:vlc output HDMI-A-0
+
+#Borders and shit#
+
+for_window [class="^.*"] border pixel 0 
+new_window pixel
+
+
+# Examples
+gaps inner all set 20
+gaps outer current plus 5
+gaps horizontal current plus 40
+gaps outer current toggle 60
+
+# Only enable gaps on a workspace when there is at least one container
+smart_gaps on
+
+# Only enable outer gaps when there is exactly one container
+smart_gaps inverse_outer
+
+#Move workspace to another monitor
+bindsym $mod+m move workspace to output right
+bindsym $mod+n move workspace to output left
+
+#Reload/Restart/Exit#
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec i3-msg exit
+
+#Resize Window#
+
+mode "resize" {
+
+        bindsym Right resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Left resize grow width 5 px or 5 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+#Switch WS#
+
+bindsym $mod+period workspace next
+bindsym $mod+comma workspace prev
+
+#i3lock#
+
+bindsym $MOD+SHIFT+x exec i3lock -c 383C45

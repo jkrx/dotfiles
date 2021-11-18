@@ -1,0 +1,65 @@
+// vim:ts=4:sw=4:et
+{
+    // workspace with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "fullscreen_mode": 1,
+    "layout": "splitv",
+    "percent": 1,
+    "type": "workspace",
+    "nodes": [
+        {
+            // splith split container with 1 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.45,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1001,
+                       "width": 1276,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "i3-save-tree --output DVI-D-0 > ~/.config/i3/dvi-1.json",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                       // "class": "^kitty$",
+                       // "instance": "^kitty$",
+                       // "title": "^i3\\-save\\-tree\\ \\-\\-output\\ DVI\\-D\\-0\\ \\>\\ \\~\\/\\.config\\/i3\\/dvi\\-1\\.json$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1001,
+               "width": 1276,
+               "x": 0,
+               "y": 0
+            },
+            "name": "BpyTOP",
+            "percent": 0.55,
+            "swallows": [
+               {
+               // "class": "^kitty$",
+               // "instance": "^kitty$",
+               // "title": "^BpyTOP$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

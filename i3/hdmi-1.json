@@ -1,0 +1,164 @@
+// vim:ts=4:sw=4:et
+{
+    // workspace with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "fullscreen_mode": 1,
+    "layout": "splith",
+    "percent": 0.2,
+    "type": "workspace",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1024,
+               "width": 1280,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Arch Linux - perl-anyevent-i3 0.17-6 (any) - Mozilla Firefox",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^firefox$",
+               // "instance": "^Navigator$",
+               // "title": "^Arch\\ Linux\\ \\-\\ perl\\-anyevent\\-i3\\ 0\\.17\\-6\\ \\(any\\)\\ \\-\\ Mozilla\\ Firefox$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // workspace with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.2,
+    "type": "workspace",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1057,
+               "width": 1916,
+               "x": 1282,
+               "y": 21
+            },
+            "name": "Steam",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^Steam$",
+               // "instance": "^Steam$",
+               // "title": "^Steam$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // workspace with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.2,
+    "type": "workspace",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1057,
+               "width": 1916,
+               "x": 1282,
+               "y": 21
+            },
+            "name": "qBittorrent v4.3.0",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^qBittorrent$",
+               // "instance": "^qbittorrent$",
+               // "title": "^qBittorrent\\ v4\\.3\\.0$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // workspace with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.2,
+    "type": "workspace",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1057,
+               "width": 956,
+               "x": 0,
+               "y": 0
+            },
+            "name": "nano .config/i3/config",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^kitty$",
+               // "instance": "^kitty$",
+               // "title": "^nano\\ \\.config\\/i3\\/config$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // workspace with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.2,
+    "type": "workspace",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1023,
+               "width": 1279,
+               "x": 1282,
+               "y": 21
+            },
+            "name": "@Shlotato - Discord",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^discord$",
+               // "instance": "^discord$",
+               // "title": "^\\@Shlotato\\ \\-\\ Discord$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
